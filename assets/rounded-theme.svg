@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+    <title>Image Zoom Icon</title>
+    <desc>Icon representing image zoom functionality</desc>
+    <g fill="none" fill-rule="evenodd">
+        <!-- Magnifying glass base -->
+        <circle cx="120" cy="120" r="80" stroke="#1875F0" stroke-width="20" stroke-linecap="round" stroke-dasharray="0"/>
+    </g>
+</svg>
