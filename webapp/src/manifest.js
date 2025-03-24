@@ -8,7 +8,7 @@ const manifest = JSON.parse(`
     "homepage_url": "https://github.com/Karoid/mattermost-plugin-rounded-theme",
     "support_url": "https://github.com/Karoid/mattermost-plugin-rounded-theme/issues",
     "icon_path": "assets/rounded-theme.svg",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "min_server_version": "6.2.1",
     "webapp": {
         "bundle_path": "webapp/dist/main.js"

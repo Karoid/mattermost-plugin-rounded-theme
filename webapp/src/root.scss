@@ -1,3 +1,4 @@
+/* NanumSquareRound 폰트 설정 */
 @font-face {
   font-family: 'NanumSquareRound';
   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.eot);
@@ -20,6 +21,35 @@
   font-family: 'NanumSquareRoundL';
   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot);
   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.ttf) format("truetype");
+}
+
+/* 
+ * D2 coding (Korean) http://dev.naver.com/projects/d2coding/
+ */
+ @font-face {
+  font-family: 'D2 coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2Coding.eot');
+  src: local('※'), local('D2Coding'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2Coding.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2Coding.woff2') format('x-woff2'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2Coding.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2Coding.ttf') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2Coding.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'D2 coding';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2CodingBold.eot');
+  src: local('※'), local('D2Coding Bold'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2CodingBold.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2CodingBold.woff2') format('x-woff2'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2CodingBold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2CodingBold.ttf') format('truetype'),
+    url('https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/D2CodingBold.svg') format('svg');
 }
 
 /* 기본 및 Open Sans 폰트 설정 */
@@ -91,4 +121,9 @@ body,
 
 .post .attachment .attachment-fields .attachment-field__caption {
   padding-top: 0;
+}
+
+/* 코드 폰트 설정 */
+code, kbd, pre, samp {
+  font-family: 'D2 coding', Menlo, Monaco, Consolas, "Courier New", monospace;
 }
