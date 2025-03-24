@@ -22,38 +22,73 @@
   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.ttf) format("truetype");
 }
 
-body {
-  font-family: 'NanumSquareRound', sans-serif;
+/* 기본 및 Open Sans 폰트 설정 */
+body,
+.app__body.font--open_sans,
+#SidebarContainer .SidebarChannelGroupHeader_groupButton,
+.channel-header .heading {
+  font-family: 'NanumSquareRound', 'Open Sans', sans-serif;
 }
 
-.post-image__column{
+/* 제목 폰트 설정 */
+.app__body {
+  h1,
+  h2,
+  h3 {
+    font-family: NanumSquareRoundB, Metropolis, sans-serif;
+  }
+}
+
+.icon, .icon-plus {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* 이미지 컬럼 스타일 */
+.post-image__column {
+  border-radius: 10px;
+  height: 8.4rem;
+}
+
+/* 둥근 모서리 요소들 */
+.file-view--single .file__image .image-loaded img,
+.post-menu,
+.AdvancedTextEditor__body,
+[data-testid="call-thread"] {
   border-radius: 10px;
 }
 
-.file-view--single .file__image .image-loaded img {
-  border-radius: 10px;
-}
-
+/* 모달 이미지 모서리 제거 */
 .modal .modal-image .modal-image__wrapper img {
   border-radius: 0;
 }
 
-.post-menu {
-  border-radius: 10px;
-}
-
-.AdvancedTextEditor__body {
-  border-radius: 10px;
-}
-
+/* 채널 뷰 배경 투명화 */
 #channel_view {
   background: transparent;
 }
 
-.MenuWrapper>nav>div>div {
+/* 숨김 처리 요소들 */
+.MenuWrapper > nav > div > div,
+#UpgradeButton,
+.MenuStartTrial {
   display: none;
 }
 
-#UpgradeButton{
-  display: none;
+/* 게시물 이미지 크기 설정 */
+.post-image {
+  width: 9.2rem;
+  height: 7rem;
+}
+
+/* 썸네일 이미지 크기 설정 */
+.post-image__thumbnail {
+  width: 10rem;
+}
+
+.app__body .attachment .attachment__content {
+  border-color: transparent;
+}
+
+.post .attachment .attachment-fields .attachment-field__caption {
+  padding-top: 0;
 }
